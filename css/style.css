@@ -551,6 +551,11 @@ footer{
         margin-left:0;
     }
 
+    .logo a img{
+        width: 95%;
+    }
+
+
     /*index*/
 
     .banner{
