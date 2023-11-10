@@ -13,6 +13,8 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--titulo-->
     <title>F1</title>
 </head>
@@ -21,7 +23,10 @@
     <header>
         <!--logo-->
         <div class="logo">
-            <img src="./assets/img/logo.png" alt="vehiculo de formula uno que tiene escrito formula uno">
+            <!--<img src="../assets/img/logo.png" alt="vehiculo de formula uno que tiene escrito formula uno">-->
+            <a href="./index.html">
+                <img src="./assets/img/logo.png" alt="vehiculo de formula uno que tiene escrito formula uno"/>
+            </a>
         </div>
          <!--menu-->
         <nav class="navbar navbar-expand-lg">
@@ -31,7 +36,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                  <a class="nav-link  active" aria-current="page" href="./pages/historia.html">INICIO</a>
+                  <a class="nav-link  active" aria-current="page" href="./index.html">INICIO</a>
                   <a class="nav-link" href="./pages/historia.html">HISTORIAS</a>
                   <a class="nav-link" href="./pages/pilotos.html">PILOTOS</a>
                   <a class="nav-link" href="./pages/escuderias.html">ESCUDERIAS</a>
@@ -75,7 +80,15 @@
     </main>
     <!--pie de pagina-->
     <footer>
-        <p>Derechos Reservados®</p>
+        <div class="derechos">
+            <div class="redes_sociales">
+                <a href="https://www.instagram.com/f1/" target="_blank"><i class="bi bi-instagram bi-8x"></i></a>
+                <a href="https://twitter.com/F1" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/Formula1/" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>© 2023. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <!--js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
