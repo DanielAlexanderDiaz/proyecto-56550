@@ -1,0 +1,109 @@
+//mobile
+@media only screen and (max-width: 500px){
+
+    //estilos generales
+
+    .navbar-nav a{
+        margin-left:0;
+    }
+
+    .logo a img{
+        width: 95%;
+    }
+
+    //index
+    
+    .cuerpo-index{
+
+        & .banner{
+            display: none;
+        }
+
+        & .articulos{
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            & .articulo{
+                width: 320px;
+                margin-bottom: 50px;
+    
+                & h2{
+                    padding-top: 3px;
+                }
+    
+                & p{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    //historias
+
+    .contenido{
+
+        & .historias{
+            width: auto;
+    
+            & .historia{
+                width: auto;
+    
+                &  img{
+                    display: none;
+                }
+    
+                & .listado{
+                    padding-top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        & .barra-navegadora{
+            display: none;
+        }
+    }
+
+    //pilotos
+
+    .pilotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    //escuderias
+
+    .escuderias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .escuderia{
+            width: 237px;
+            height: 200px;
+            border-radius: 0;
+
+            & .escuderia-informacion img{
+                display: none;
+            }
+        }
+    }
+
+    //contacto
+
+    .contenedor{
+        justify-content: center;
+
+        &  .contenido-contacto{
+            display: none;
+        }
+
+        & .formula{
+            width: 90%;
+        }
+    }
+}

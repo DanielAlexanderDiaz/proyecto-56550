@@ -9,7 +9,7 @@ header {
   width: 100%;
 }
 header h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 70px;
   text-align: center;
 }
@@ -433,6 +433,78 @@ footer .derechos .redes_sociales a {
 }
 footer .derechos .redes_sociales a i {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-nav a {
+    margin-left: 0;
+  }
+  .logo a img {
+    width: 95%;
+  }
+  .cuerpo-index .banner {
+    display: none;
+  }
+  .cuerpo-index .articulos {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cuerpo-index .articulos .articulo {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+  .cuerpo-index .articulos .articulo h2 {
+    padding-top: 3px;
+  }
+  .cuerpo-index .articulos .articulo p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .contenido .historias {
+    width: auto;
+  }
+  .contenido .historias .historia {
+    width: auto;
+  }
+  .contenido .historias .historia img {
+    display: none;
+  }
+  .contenido .historias .historia .listado {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .contenido .barra-navegadora {
+    display: none;
+  }
+  .pilotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .escuderias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .escuderias .escuderia {
+    width: 237px;
+    height: 200px;
+    border-radius: 0;
+  }
+  .escuderias .escuderia .escuderia-informacion img {
+    display: none;
+  }
+  .contenedor {
+    justify-content: center;
+  }
+  .contenedor .contenido-contacto {
+    display: none;
+  }
+  .contenedor .formula {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
