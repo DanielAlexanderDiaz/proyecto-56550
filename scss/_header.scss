@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+
+    & h1{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 70px;
+        text-align: center;
+    }
+}
+
+.logo{
+    display: flex;
+    height: 150px;
+    justify-content: center;
+
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        & img{
+            width: 450px;
+        }
+    }
+}
+
+
+nav{
+    background-color: #C10000;
+
+    & .navbar-nav a{
+        margin-left:60px;
+        color: #EEEEEE;
+    }
+}
+
