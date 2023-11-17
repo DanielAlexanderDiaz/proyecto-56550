@@ -1,11 +1,11 @@
 /*estilos generales*/
 
-body{
+/*body{
     margin: 0;
-}
+}*/
 
 /*cuerpo*/
-body{
+/*body{
     background-color: white;
 }
 
@@ -17,22 +17,6 @@ body{
     color: #C10000;
     text-align: center;
     font-size: 60px;
-}
-
-.barra-navegadora{
-    background-color: #EEEEEE;
-}
-
-.barra-navegadora h3{
-    letter-spacing: 1.5px;
-    background-color: #C10000;
-    color: #EEEEEE; 
-}
-
-.barra-navegadora a{
-    font-family: 'Bebas Neue', sans-serif;
-    text-decoration: none;
-    color: black;
 }
 
 p{
@@ -50,7 +34,7 @@ h3{
 
 article h2{
     letter-spacing: 1.5px;
-}
+}*/
 
 /*nav{
     background-color: #C10000;
@@ -96,7 +80,7 @@ header h1{
 }*/
 
 /*index*/
-.cuerpo-index{
+/*.cuerpo-index{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -145,19 +129,19 @@ header h1{
     margin-right: 20px;
     margin-left: 20px;
 }
-
+*/
 
 /**historias**/
 
-.titulo{
+/*.titulo{
     display: flex;
     height: 200px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+}*/
 
-.contenido{
+/*.contenido{
     display: flex;
 }
 
@@ -209,12 +193,16 @@ header h1{
     margin-right: 10px;
     margin-bottom: 10px;
     border: 1px #C10000 solid;
+    background-color: #EEEEEE;
 }
 
 .barra-navegadora h3{
     font-size: 25px;
     margin-top: 0;
     text-align: center;
+    letter-spacing: 1.5px;
+    background-color: #C10000;
+    color: #EEEEEE; 
 }
 
 .barra-navegadora ul{
@@ -231,11 +219,13 @@ header h1{
 .barra-navegadora li a{
     font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
-}
+    text-decoration: none;
+    color: black;
+}*/
 
 /**pilotos**/
 
-.pilotos{
+/*.pilotos{
     display: grid;
     grid-template-columns: repeat(4, 250px);
     justify-content: space-around;
@@ -332,10 +322,11 @@ header h1{
 .informacion-piloto-personal img{
     width: 20%;
 }
+*/
 
 /*escuderias*/
 
-.escuderias{
+/*.escuderias{
     display: grid;
     grid-template-columns: 2fr 50%;
     justify-items: center;
@@ -423,11 +414,11 @@ header h1{
     display: inline;
     font-family: 'PT Sans', sans-serif;
     font-size: 20px;
-}
+}*/
 
 /*contacto*/
 
-.formulario{
+/*.formulario{
     border: #C10000 2px solid;
     border-radius: 0px 30px 0px 30px;
 }
@@ -500,7 +491,7 @@ button{
     background-color: #C10000;
     color: white;
     border: none;
-}
+}*/
 
 /*footer*/
 

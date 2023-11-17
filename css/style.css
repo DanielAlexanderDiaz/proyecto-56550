@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,372 @@ nav {
 nav .navbar-nav a {
   margin-left: 60px;
   color: #EEEEEE;
+}
+
+/*estilos generales*/
+body {
+  background-color: white;
+}
+
+.historia, .pilotos, .escuderia, .circuitos {
+  background-color: #EEEEEE;
+}
+
+.titulo {
+  display: flex;
+  height: 200px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h2 {
+  color: #C10000;
+  text-align: center;
+  font-size: 60px;
+}
+
+p {
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+article h2 {
+  letter-spacing: 1.5px;
+}
+
+.red-bull h3 {
+  background-color: #3671C6;
+}
+
+.ferrari h3 {
+  background-color: #F91536;
+}
+
+.mercedes h3 {
+  background-color: #6CD3BF;
+}
+
+.alpine h3 {
+  background-color: #2293D1;
+}
+
+.mclaren h3 {
+  background-color: #F58020;
+}
+
+.alfa-romeo h3 {
+  background-color: #C92D4B;
+}
+
+.aston-martin h3 {
+  background-color: #358C75;
+}
+
+.haas h3 {
+  background-color: #B6BABD;
+}
+
+.alphatauri h3 {
+  background-color: #5E8FAA;
+}
+
+.williams h3 {
+  background-color: #37BEDD;
+}
+
+/*index*/
+.cuerpo-index {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.cuerpo-index .banner {
+  display: flex;
+  justify-content: center;
+}
+.cuerpo-index .banner img {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.cuerpo-index .articulos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cuerpo-index .articulos .articulo {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #EEEEEE;
+}
+.cuerpo-index .articulos .articulo h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  background-color: #C10000;
+  color: #EEEEEE;
+}
+.cuerpo-index .articulos .articulo img {
+  width: 50%;
+}
+.cuerpo-index .articulos .articulo p {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/*historias*/
+.contenido {
+  display: flex;
+}
+.contenido .historias {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.contenido .historias .historia {
+  width: 99%;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: 1px #C10000 solid;
+}
+.contenido .historias .historia h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 0;
+  padding-right: 3px;
+  text-align: center;
+  background-color: #C10000;
+  color: #EEEEEE;
+}
+.contenido .historias .historia .listado {
+  display: flex;
+  flex-direction: column;
+}
+.contenido .historias .historia .listado h3 {
+  margin-top: 3px;
+  margin-left: 22px;
+  font-size: 20px;
+}
+.contenido .historias .historia .listado ul li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+}
+.contenido .barra-navegadora {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px #C10000 solid;
+  background-color: #EEEEEE;
+}
+.contenido .barra-navegadora h3 {
+  font-size: 25px;
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background-color: #C10000;
+  color: #EEEEEE;
+}
+.contenido .barra-navegadora ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.contenido .barra-navegadora ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.contenido .barra-navegadora ul li a {
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+/*pilotos*/
+.pilotos {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-around;
+  align-content: center;
+  background: white;
+}
+.pilotos .piloto {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 230px;
+  height: 380px;
+  background: #EEEEEE;
+  margin-bottom: 50px;
+  border: 1px #b6b6b6 solid;
+  border-radius: 10px;
+}
+.pilotos .piloto h3 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+.pilotos .piloto .informacion-piloto {
+  display: flex;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-numero {
+  align-self: center;
+  width: 50%;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-numero h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 90px;
+  margin: 0;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal {
+  width: 50%;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal img {
+  width: 20%;
+}
+
+/*escuderias*/
+.escuderias {
+  display: grid;
+  grid-template-columns: 2fr 50%;
+  justify-items: center;
+}
+.escuderias .escuderia {
+  width: 650px;
+  height: 150px;
+  display: flex;
+  border: 1px #b6b6b6 solid;
+  border-radius: 0px 30px 30px 0px;
+  margin-bottom: 40px;
+}
+.escuderias .escuderia h3 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+.escuderias .escuderia .escuderia-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.escuderias .escuderia .escuderia-informacion img {
+  width: 100%;
+  align-self: flex-start;
+}
+.escuderias .red-bull {
+  border: #3671C6 1px solid;
+}
+.escuderias .ferrari {
+  border: #F91536 1px solid;
+}
+.escuderias .mercedes {
+  border: #6CD3BF 1px solid;
+}
+.escuderias .alpine {
+  border: #2293D1 1px solid;
+}
+.escuderias .mclaren {
+  border: #F58020 1px solid;
+}
+.escuderias .alfa-romeo {
+  border: #C92D4B 1px solid;
+}
+.escuderias .aston-martin {
+  border: #358C75 1px solid;
+}
+.escuderias .haas {
+  border: #B6BABD 1px solid;
+}
+.escuderias .alphatauri {
+  border: #5E8FAA 1px solid;
+}
+.escuderias .williams {
+  border: #37BEDD 1px solid;
+}
+
+/*contacto*/
+.contenedor {
+  display: flex;
+}
+.contenedor .contenido-contacto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .contenido-contacto .contenido-texto {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  font-size: 80px;
+}
+.contenedor .contenido-contacto .contenido-texto p {
+  font-size: 20px;
+}
+.contenedor .contenido-contacto .contenido-video {
+  align-self: center;
+}
+.contenedor .formula {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.contenedor .formula .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border: #C10000 2px solid;
+  border-radius: 0px 30px 0px 30px;
+}
+.contenedor .formula .formulario label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  width: 90%;
+}
+.contenedor .formula .formulario input {
+  width: 85%;
+  height: 30px;
+}
+.contenedor .formula .formulario textarea {
+  width: 85%;
+  height: 200px;
+}
+.contenedor .formula .formulario button {
+  height: 40px;
+  width: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  background-color: #C10000;
+  color: white;
+  border: none;
 }
 
 footer {
