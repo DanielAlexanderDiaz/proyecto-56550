@@ -1,3 +1,73 @@
+#color_red-bull {
+  border: #3671C6 1px solid;
+}
+#color_red-bull h3 {
+  background-color: #3671C6;
+}
+
+#color_ferrari {
+  border: #F91536 1px solid;
+}
+#color_ferrari h3 {
+  background-color: #F91536;
+}
+
+#color_mercedes {
+  border: #6CD3BF 1px solid;
+}
+#color_mercedes h3 {
+  background-color: #6CD3BF;
+}
+
+#color_alpine {
+  border: #2293D1 1px solid;
+}
+#color_alpine h3 {
+  background-color: #2293D1;
+}
+
+#color_mclaren {
+  border: #F58020 1px solid;
+}
+#color_mclaren h3 {
+  background-color: #F58020;
+}
+
+#color_alfa-romeo {
+  border: #C92D4B 1px solid;
+}
+#color_alfa-romeo h3 {
+  background-color: #C92D4B;
+}
+
+#color_aston-martin {
+  border: #358C75 1px solid;
+}
+#color_aston-martin h3 {
+  background-color: #358C75;
+}
+
+#color_haas {
+  border: #B6BABD 1px solid;
+}
+#color_haas h3 {
+  background-color: #B6BABD;
+}
+
+#color_alphatauri {
+  border: #5E8FAA 1px solid;
+}
+#color_alphatauri h3 {
+  background-color: #5E8FAA;
+}
+
+#color_williams {
+  border: #37BEDD 1px solid;
+}
+#color_williams h3 {
+  background-color: #37BEDD;
+}
+
 body {
   margin: 0;
 }
@@ -74,76 +144,6 @@ h3 {
 
 article h2 {
   letter-spacing: 1.5px;
-}
-
-#red-bull {
-  border: #3671C6 1px solid;
-}
-#red-bull h3 {
-  background-color: #3671C6;
-}
-
-#ferrari {
-  border: #F91536 1px solid;
-}
-#ferrari h3 {
-  background-color: #F91536;
-}
-
-#mercedes {
-  border: #6CD3BF 1px solid;
-}
-#mercedes h3 {
-  background-color: #6CD3BF;
-}
-
-#alpine {
-  border: #2293D1 1px solid;
-}
-#alpine h3 {
-  background-color: #2293D1;
-}
-
-#mclaren {
-  border: #F58020 1px solid;
-}
-#mclaren h3 {
-  background-color: #F58020;
-}
-
-#alfa-romeo {
-  border: #C92D4B 1px solid;
-}
-#alfa-romeo h3 {
-  background-color: #C92D4B;
-}
-
-#aston-martin {
-  border: #358C75 1px solid;
-}
-#aston-martin h3 {
-  background-color: #358C75;
-}
-
-#haas {
-  border: #B6BABD 1px solid;
-}
-#haas h3 {
-  background-color: #B6BABD;
-}
-
-#alphatauri {
-  border: #5E8FAA 1px solid;
-}
-#alphatauri h3 {
-  background-color: #5E8FAA;
-}
-
-#williams {
-  border: #37BEDD 1px solid;
-}
-#williams h3 {
-  background-color: #37BEDD;
 }
 
 /*index*/

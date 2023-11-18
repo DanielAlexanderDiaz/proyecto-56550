@@ -5,13 +5,31 @@ $fuenteSecundaria : 'PT Sans', sans-serif;
 //Colores
 $rojo: #C10000;
 $blanco: #EEEEEE;
-$red-bull: #3671C6;
-$ferrari: #F91536;
-$mercedes: #6CD3BF;
-$alpine: #2293D1;
-$mclaren: #F58020;
-$alfa-romeo: #C92D4B;
-$aston-martin: #358C75;
-$haas: #B6BABD;
-$alphatauri: #5E8FAA;
-$williams: #37BEDD;
+
+//map
+$color_escuderias:(
+    red-bull: #3671C6,
+    ferrari: #F91536,
+    mercedes: #6CD3BF,
+    alpine: #2293D1,
+    mclaren: #F58020,
+    alfa-romeo: #C92D4B,
+    aston-martin: #358C75,
+    haas: #B6BABD,
+    alphatauri: #5E8FAA,
+    williams: #37BEDD
+);
+
+@each $var, $color in $color_escuderias {
+    
+    #color_#{$var}{
+
+        border: $color 1px solid;
+
+        & h3{
+            background-color: $color;
+        }   
+    }
+}
+   
+
