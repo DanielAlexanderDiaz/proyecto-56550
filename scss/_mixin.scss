@@ -1,0 +1,101 @@
+//flexbox
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-space-evenly-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-column-space-evenly-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flex-row-center-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+@mixin flex-column-items-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-column-self-center{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+@mixin flex-column-content-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//grid
+@mixin grid-grid-template-columns-justify-content-align-content{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-around;
+    align-content: center;
+}
+
+@mixin grid-grid-template-columns-justify-content-align-content-mq{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-around;
+    align-content: center;
+}
+
+@mixin grid-grid-template-columns-justify-content-align-content-mq-1{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);;
+    justify-content: space-around;
+    align-content: center;
+}
+
+@mixin grid-grid-template-columns-center {
+    display: grid;
+    grid-template-columns: 2fr 50%;
+    justify-items: center;
+}
+
+
+
+//sizes
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}

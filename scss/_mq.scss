@@ -16,10 +16,8 @@
         }
 
         & .articulos{
+            @include flex-column-items-center;
             margin-top: 70px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
     
             & .articulo{
                 width: 320px;
@@ -66,17 +64,13 @@
     //pilotos
 
     .pilotos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-items-center;
     }
 
     //escuderias
 
     .escuderias{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-items-center;
 
         & .escuderia{
             width: 237px;
@@ -108,14 +102,8 @@
 @media only screen and (min-width: 501px) and (max-width: 920px){
 
     //index
-
-    .banner{
-        margin-top: 60px;
-    }
-
     .articulos{
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-items-center;
 
         & .articulo{
             width: 80%;
@@ -159,24 +147,16 @@
     //pilotos
 
     .pilotos{
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        justify-content: space-around;
-        align-content: center;
+        @include grid-grid-template-columns-justify-content-align-content-mq;
     }
 
     //escuderias
 
     .escuderias{
-
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        justify-content: space-around;
-        align-content: center;
+        @include grid-grid-template-columns-justify-content-align-content-mq;
 
         & .escuderia{
-            width: 237px;
-            height: 200px;
+            @include sizes(237px, 200px);
             border-radius: 0;
 
             & .escuderia-informacion img{
@@ -227,24 +207,16 @@
     //pilotos
 
     .pilotos{
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        justify-content: space-around;
-        align-content: center;
+        @include grid-grid-template-columns-justify-content-align-content-mq;
     }
 
     //escuderias
 
     .escuderias{
-
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        justify-content: space-around;
-        align-content: center;
+        @include grid-grid-template-columns-justify-content-align-content-mq;
 
         & .escuderia{
-            width: 237px;
-            height: 200px;
+            @include sizes(237px, 200px);
             border-radius: 0;
 
             & .escuderia-informacion img{
@@ -275,18 +247,13 @@
     //pilotos
 
     .pilotos{
-        display: grid;
-        grid-template-columns: repeat(3, 250px);
-        justify-content: space-around;
-        align-content: center;
+        @include grid-grid-template-columns-justify-content-align-content-mq-1;
     }
 
     //escuderias
 
     .escuderias{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-items-center;
 
         & .escuderia{
             height: 200px;
@@ -314,9 +281,7 @@
     //escuderias
 
     .escuderias{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-items-center;
 
         & .escuderia{
             height: 200px;

@@ -1,6 +1,12 @@
-@import "./reset";
+//reset
 @import "./variables";
+@import "./reset";
+@import "./mixin";
+
+//layout
 @import "./header";
 @import "./contenido";
 @import "./footer";
+
+//media queries
 @import "./mq";

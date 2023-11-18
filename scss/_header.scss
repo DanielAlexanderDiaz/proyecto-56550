@@ -1,8 +1,6 @@
 header{
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: 100%;
+    @include flex-column;   
+    @include sizes(100%, 200px);
 
     & h1{
         font-family: $fuenteSecundaria;
@@ -12,14 +10,11 @@ header{
 }
 
 .logo{
-    display: flex;
+    @include flex-center;
     height: 150px;
-    justify-content: center;
 
     & a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
         width: 100%;
 
         & img{

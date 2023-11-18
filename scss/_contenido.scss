@@ -8,11 +8,8 @@ body{
 }
 
 .titulo{
-    display: flex;
+    @include flex-row-center-center;
     height: 200px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
     & h2{
         color: $rojo;
@@ -121,14 +118,11 @@ article h2{
 
 /*index*/
 .cuerpo-index{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    @include flex-column-center;
 
     & .banner{
-        display: flex;
-        justify-content: center;
-    
+        @include flex-center;
+
         & img{
             width: 100%;
             margin-top: 5px;
@@ -137,14 +131,11 @@ article h2{
     }
 
     & .articulos{
-        display: flex;
-        justify-content: space-evenly;
+        @include flex-space-evenly;
     
         & .articulo{
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-items-center;
+            width: 300px; 
             border-radius: 10px;
             margin-bottom: 20px;
             background-color: $blanco;
@@ -175,9 +166,8 @@ article h2{
     display: flex;
 
     & .historias{
+        @include flex-column;
         width: 80%;
-        display: flex;
-        flex-direction: column;
 
         & .historia{
             width: 99%;
@@ -193,12 +183,11 @@ article h2{
                 padding-right: 3px;
                 text-align: center;
                 background-color: $rojo;
-                color: #EEEEEE;
+                color: $blanco;
             }
 
             & .listado{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
 
                 & h3{
                     margin-top: 3px;
@@ -215,9 +204,8 @@ article h2{
     }
 
     & .barra-navegadora{
+        @include flex-column;
         width: 20%;
-        display: flex;
-        flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -255,18 +243,12 @@ article h2{
 
 /*pilotos*/
 .pilotos{
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    justify-content: space-around;
-    align-content: center;
+    @include grid-grid-template-columns-justify-content-align-content;
     background: white;
 
     & .piloto{
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 230px;
-        height: 380px;
+        @include flex-column-self-center;
+        @include sizes(230px, 380px);
         background: $blanco;
         margin-bottom: 50px;
         border: 1px #b6b6b6 solid;
@@ -310,21 +292,15 @@ article h2{
             }
         }
     }
-
-   
 }
 
 /*escuderias*/
 .escuderias{
-    display: grid;
-    grid-template-columns: 2fr 50%;
-    justify-items: center;
+    @include grid-grid-template-columns-center;
 
     & .escuderia{
-        width: 650px;
-        height: 150px;
+        @include sizes(650px, 150px);
         display: flex;
-        border: 1px #b6b6b6 solid;
         border-radius: 0px 30px 30px 0px;
         margin-bottom: 40px;
 
@@ -337,9 +313,7 @@ article h2{
         }
 
         & .escuderia-informacion{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-column-content-center;
 
             & img{
                 width: 100%;
@@ -354,9 +328,8 @@ article h2{
     display: flex;
 
     & .contenido-contacto{
+        @include flex-column;
         width: 50%;
-        display: flex;
-        flex-direction: column;
 
         & .contenido-texto{
             margin-left: 60px;
@@ -375,15 +348,12 @@ article h2{
     }
 
     & .formula{
+        @include flex-center;
         width: 50%;
-        display: flex;
-        justify-content: center;
         margin-bottom: 25px;
 
         & .formulario{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-items-center;
             padding-top: 10px;
             padding-bottom: 25px;
             border: $rojo 2px solid;
@@ -396,18 +366,15 @@ article h2{
             }
 
             & input{
-                width: 85%;
-                height: 30px;
+                @include sizes(85%, 30px);
             }
 
             & textarea{
-                width: 85%;
-                height: 200px;
+                @include sizes(85%, 200px);
             }
 
             & button{
-                height: 40px;
-                width: 100px;
+                @include sizes(100px, 40px);
                 font-family: $fuentePrincipal;
                 font-size: 20px;
                 background-color: $rojo;
