@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="./css/style.css">
     <!--bootstrap-->
@@ -47,7 +49,7 @@
           </nav>
     </header>
     <!--cuerpo-->
-    <main class="cuerpo-index">
+    <main class="cuerpo-index" data-aos="fade-up" data-aos-duration="700">
         <!--banner-->
         <div class="banner">
             <img src="./assets/img/banner.png" alt="autos compitiendo">
@@ -90,10 +92,15 @@
             <p>© 2023. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <!--js-->
+    <!--js bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

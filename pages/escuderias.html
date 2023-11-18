@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="../css/style.css">
     <!--bootstrap-->
@@ -49,76 +51,76 @@
     <!--cuerpo-->
     <main>
         <!--titulo pagina-->
-        <div class="titulo">  
+        <div class="titulo" data-aos="zoom-in">  
             <h2>ESCUDERIAS</h2>
         </div>
         <!--contenido-->
         <section class="escuderias">
             <!--cada escuderias-->
-            <article class="escuderia" id="color_red-bull">
+            <article class="escuderia" id="color_red-bull" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/redbull.png" alt="logo de la escuderia redbull">
                 <h3>Red Bull</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/red-bull.avif" alt="vehiculo de red bull">
                 </div>
             </article>
-            <article class="escuderia" id="color_ferrari">
+            <article class="escuderia" id="color_ferrari" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/ferrari.png" alt="logo de la escuderia ferrari">
                 <h3>Ferrari</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/ferrari.avif" alt="vehiculo de ferrari">
                 </div>      
             </article>
-            <article class="escuderia" id="color_mercedes">
+            <article class="escuderia" id="color_mercedes" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/mercedes.png" alt="logo de la escuderia mercedes">
                 <h3>Mercedes</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/mercedes.avif" alt="vehiculo de mercedes">
                 </div>
             </article>
-            <article class="escuderia" id="color_alpine">
+            <article class="escuderia" id="color_alpine" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/alpine.png" alt="logo de la escuderia alpine">
                 <h3>Alpine</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/alpine.avif" alt="vehiculo de alpine">
                 </div>
             </article>
-            <article class="escuderia" id="color_mclaren">
+            <article class="escuderia" id="color_mclaren" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/mclaren.png" alt="logo de la escuderia mclaren">
                 <h3>McLaren</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/mclaren.avif" alt="vehiculo de mclaren">
                 </div>
             </article>
-            <article class="escuderia" id="color_alfa-romeo">
+            <article class="escuderia" id="color_alfa-romeo" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/alfa-romeo.png" alt="logo de la escuderia alfa-romeo">
                 <h3>Alfa Romeo</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/alfa-romeo.avif" alt="vehiculo de alfa romeo">
                 </div>
             </article>
-            <article class="escuderia" id="color_aston-martin">
+            <article class="escuderia" id="color_aston-martin" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/aston-martin.png" alt="logo de la escuderia aston-martin">
                 <h3>Aston Martin</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/aston-martin.avif" alt="vehiculo de aston martin">
                 </div>
             </article>
-            <article class="escuderia" id="color_haas">
+            <article class="escuderia" id="color_haas" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/haas.png" alt="logo de la escuderia hass">
                 <h3>Haas</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/haas.avif" alt="vehiculo de hass">
                 </div>
             </article>
-            <article class="escuderia" id="color_alphatauri">
+            <article class="escuderia" id="color_alphatauri" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/alphaTauri.png" alt="logo de la escuderia alphatauri">
                 <h3>AlphaTauri</h3>
                 <div class="escuderia-informacion">
                     <img src="../assets/img/escuderias/vehiculos/alphatauri.avif" alt="vehiculo de alphatauri">
                 </div>
             </article>
-            <article class="escuderia" id="color_williams">
+            <article class="escuderia" id="color_williams" data-aos="fade-up" data-aos-duration="500">
                 <img src="../assets/img/escuderias/williams.png" alt="logo de la escuderia williams">
                 <h3>Williams</h3>
                 <div class="escuderia-informacion">
@@ -139,9 +141,14 @@
             <p>© 2023. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <!--js-->
+    <!--js bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

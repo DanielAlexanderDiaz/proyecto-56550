@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="../css/style.css">
     <!--bootstrap-->
@@ -49,14 +51,14 @@
     <!--cuerpo-->
     <main class="cuerpo-historias">
         <!--titulo pagina-->
-        <div class="titulo"> 
+        <div class="titulo" data-aos="zoom-in"> 
             <h2>HISTORIAS</h2>
         </div>
         <!--contenido-->
         <div class="contenido">
             <section class="historias">
                 <!--cada historia-->
-                <article class="historia" id="historia-1">
+                <article class="historia" id="historia-1"  data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-1.png" alt="vehiculos en una pista de carreras">
                     <h2>1950 - 1959</h2>
                     <div class="listado">
@@ -69,7 +71,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="historia" id="historia-2">
+                <article class="historia" id="historia-2" data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-2.png" alt="vehiculo estacionado en los pit">
                     <h2>1960 - 1966</h2>
                     <div class="listado">
@@ -81,7 +83,7 @@
                         </ul>
                     </div> 
                 </article>
-                <article class="historia" id="historia-3">
+                <article class="historia" id="historia-3" data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-3.png" alt="vehiculos en fila compitiendo">
                     <h2>1970 - 1978</h2>
                     <div class="listado">
@@ -93,7 +95,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="historia" id="historia-4">
+                <article class="historia" id="historia-4" data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-4.png" alt="equipo mcLaren posando para una foto">
                     <h2>1980 - 1988</h2>
                     <div class="listado">
@@ -104,7 +106,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="historia" id="historia-5">
+                <article class="historia" id="historia-5" data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-5.png" alt="Ayrton Senna posando para una imagen">
                     <h2>1990 - 1994</h2>
                     <div class="listado">
@@ -115,7 +117,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="historia" id="historia-6">
+                <article class="historia" id="historia-6" data-aos="fade-right" data-aos-duration="900">
                     <img src="../assets/img/historias/historia-6.png" alt="presentacion del vehiculo de ferrari">
                     <h2>2000 - 2021</h2>
                     <div class="listado">
@@ -129,7 +131,7 @@
                     </div>
                 </article>
             </section>
-            <aside class="barra-navegadora">
+            <aside class="barra-navegadora" data-aos="fade-up" data-aos-duration="700">
                 <h3>LINEA DE TIEMPO</h3>
                 <!--ir a historias-->
                 <ul>
@@ -155,9 +157,14 @@
             <p>© 2023. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <!--js-->
+    <!--js bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
