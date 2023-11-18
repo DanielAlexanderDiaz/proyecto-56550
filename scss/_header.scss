@@ -28,13 +28,12 @@ header{
     }
 }
 
-
 nav{
     background-color: $rojo;
 
     & .navbar-nav a{
-        margin-left:60px;
-        color: #EEEEEE;
+        margin-right: 60px;
+        color: $blanco;
     }
 }
 

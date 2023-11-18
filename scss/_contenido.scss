@@ -4,7 +4,7 @@ body{
 }
 
 .historia, .pilotos, .escuderia, .circuitos{
-    background-color: #EEEEEE;
+    background-color: $blanco;
 }
 
 .titulo{
@@ -15,7 +15,7 @@ body{
     align-items: center;
 
     & h2{
-        color: #C10000;
+        color: $rojo;
         text-align: center;
         font-size: 60px;
     }
@@ -23,59 +23,99 @@ body{
 
 p{
     font-size: 14px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: $fuenteSecundaria;
 }
 
 h2{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: $fuentePrincipal;
 }
 
 h3{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: $fuentePrincipal;
 }
 
 article h2{
     letter-spacing: 1.5px;
 }
 
-.red-bull h3{
-    background-color: #3671C6;
+#red-bull{
+    border: $red-bull 1px solid;
+
+    & h3{
+        background-color: $red-bull;
+    }
 }
 
-.ferrari h3{
-    background-color: #F91536;
+#ferrari{
+   border: $ferrari 1px solid;
+
+   & h3{
+        background-color: $ferrari;
+   }
 }
 
-.mercedes h3{
-    background-color: #6CD3BF;
+#mercedes{
+   border: $mercedes 1px solid;
+
+   & h3{
+        background-color: $mercedes;
+   }   
 }
 
-.alpine h3{
-    background-color: #2293D1;
+#alpine{
+   border: $alpine 1px solid;
+
+   & h3{
+        background-color: $alpine;
+   }
 }
 
-.mclaren h3{
-    background-color: #F58020;
+#mclaren{
+   border: $mclaren 1px solid;
+
+   & h3{
+        background-color: $mclaren;
+   }
 }
 
-.alfa-romeo h3{
-    background-color: #C92D4B;
+#alfa-romeo{
+   border: $alfa-romeo 1px solid;
+
+   & h3{
+        background-color: $alfa-romeo;
+   }
 }
 
-.aston-martin h3{
-    background-color: #358C75;
+#aston-martin{
+   border: $aston-martin 1px solid;
+
+   & h3{
+        background-color: $aston-martin;
+   }
 }
 
-.haas h3{
-    background-color: #B6BABD;
+#haas{
+   border: $haas 1px solid;
+
+   & h3{
+        background-color: $haas;
+   }
 }
 
-.alphatauri h3{
-    background-color: #5E8FAA;
+#alphatauri{
+   border: $alphatauri 1px solid;
+ 
+   & h3{
+        background-color: $alphatauri;
+   }
 }
 
-.williams h3{
-    background-color: #37BEDD;
+#williams{
+   border: $williams 1px solid;
+
+   & h3{
+        background-color: $williams;
+   }
 }
 
 
@@ -107,14 +147,14 @@ article h2{
             align-items: center;
             border-radius: 10px;
             margin-bottom: 20px;
-            background-color: #EEEEEE;
+            background-color: $blanco;
     
             & h2{
                 width: 100%;
                 text-align: center;
                 margin-top: 0;
-                background-color: #C10000;
-                color: #EEEEEE;
+                background-color: $rojo;
+                color: $blanco;
             }
     
             & img{
@@ -144,7 +184,7 @@ article h2{
             display: flex;
             margin-bottom: 10px;
             margin-left: 10px;
-            border: 1px #C10000 solid;
+            border: 1px $rojo solid;
 
             & h2{
                 writing-mode: vertical-lr;
@@ -152,7 +192,7 @@ article h2{
                 margin: 0;
                 padding-right: 3px;
                 text-align: center;
-                background-color: #C10000;
+                background-color: $rojo;
                 color: #EEEEEE;
             }
 
@@ -167,7 +207,7 @@ article h2{
                 }
 
                 & ul li{
-                    font-family: 'PT Sans', sans-serif;
+                    font-family: $fuenteSecundaria;
                     font-size: 15px;
                 }
             }
@@ -181,7 +221,7 @@ article h2{
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-        border: 1px #C10000 solid;
+        border: 1px $rojo solid;
         background-color: #EEEEEE;
 
         & h3{
@@ -189,8 +229,8 @@ article h2{
             margin-top: 0;
             text-align: center;
             letter-spacing: 1.5px;
-            background-color: #C10000;
-            color: #EEEEEE; 
+            background-color: $rojo;
+            color: $blanco; 
         }
 
         & ul{
@@ -204,7 +244,7 @@ article h2{
 
                 & a{
                     font-size: 20px;
-                    font-family: 'Bebas Neue', sans-serif;
+                    font-family: $fuentePrincipal ;
                     text-decoration: none;
                     color: black;
                 }
@@ -227,7 +267,7 @@ article h2{
         justify-self: center;
         width: 230px;
         height: 380px;
-        background: #EEEEEE;
+        background: $blanco;
         margin-bottom: 50px;
         border: 1px #b6b6b6 solid;
         border-radius: 10px;
@@ -250,7 +290,7 @@ article h2{
 
                 & h2{
                     text-align: center;
-                    font-family: 'Bebas Neue', sans-serif;
+                    font-family: $fuentePrincipal;
                     font-size: 90px;
                     margin: 0;
                 }
@@ -260,7 +300,7 @@ article h2{
                 width: 50%;
 
                 & p{
-                    font-family: 'Bebas Neue', sans-serif;
+                    font-family: $fuentePrincipal;
                     font-size: 15px;
                 }
 
@@ -307,46 +347,6 @@ article h2{
             }
         }
     }
-
-    & .red-bull{
-        border: #3671C6 1px solid;
-    }
-   
-    & .ferrari{
-       border: #F91536 1px solid;
-    }
-   
-    & .mercedes{
-       border: #6CD3BF 1px solid;
-    }
-   
-    & .alpine{
-       border: #2293D1 1px solid;
-    }
-   
-    & .mclaren{
-       border: #F58020 1px solid;
-    }
-   
-    & .alfa-romeo{
-       border: #C92D4B 1px solid;
-    }
-   
-    & .aston-martin{
-       border: #358C75 1px solid;
-    }
-   
-    & .haas{
-       border: #B6BABD 1px solid;
-    }
-   
-    & .alphatauri{
-       border: #5E8FAA 1px solid;
-    }
-   
-    & .williams{
-       border: #37BEDD 1px solid;
-    }
 }
 
 /*contacto*/
@@ -386,11 +386,11 @@ article h2{
             align-items: center;
             padding-top: 10px;
             padding-bottom: 25px;
-            border: #C10000 2px solid;
+            border: $rojo 2px solid;
             border-radius: 0px 30px 0px 30px;
 
             & label{
-                font-family: 'Bebas Neue', sans-serif;
+                font-family: $fuentePrincipal;
                 font-size: 25px;
                 width: 90%;
             }
@@ -408,9 +408,9 @@ article h2{
             & button{
                 height: 40px;
                 width: 100px;
-                font-family: 'Bebas Neue', sans-serif;
+                font-family: $fuentePrincipal;
                 font-size: 20px;
-                background-color: #C10000;
+                background-color: $rojo;
                 color: white;
                 border: none;
             }

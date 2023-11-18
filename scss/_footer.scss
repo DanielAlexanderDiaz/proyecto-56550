@@ -1,6 +1,6 @@
 footer{
     display: flex;
-    background-color: #C10000;
+    background-color: $rojo;
     height: 120px;
     justify-content: space-evenly;
     align-items: center;
@@ -13,7 +13,7 @@ footer{
         height: 100px;
 
         & p{
-            color: #EEEEEE;
+            color: $blanco;
             margin: 0px;
         }
 
@@ -21,11 +21,11 @@ footer{
             width: 180px;
             display: flex;
             justify-content: space-evenly;
-            color: #EEEEEE;
+            color: $blanco;
 
             & a{
                 text-decoration: none;
-                color: #EEEEEE;
+                color: $blanco;
 
                 & i{
                     font-size: 20px;
