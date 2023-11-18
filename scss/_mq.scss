@@ -1,11 +1,7 @@
 //mobile
 @media only screen and (max-width: 500px){
 
-    //estilos generales
-
-    .navbar-nav a{
-        margin-left:0;
-    }
+    //header
 
     .logo a img{
         width: 95%;
@@ -106,4 +102,238 @@
             width: 90%;
         }
     }
+}
+
+//tablet 1
+@media only screen and (min-width: 501px) and (max-width: 920px){
+
+    //index
+
+    .banner{
+        margin-top: 60px;
+    }
+
+    .articulos{
+        flex-direction: column;
+        align-items: center;
+
+        & .articulo{
+            width: 80%;
+
+            & h2{
+                padding-top: 3px;
+            }
+
+            & p{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    //historias
+
+    .contenido{
+        
+        & .historias{
+            width: auto;
+    
+            & .historia{
+                width: auto;
+    
+                & img{
+                    display: none;
+                }
+    
+                & .listado{
+                    padding-top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        
+        & .barra-navegadora{
+            display: none;
+        }
+    }
+    
+    //pilotos
+
+    .pilotos{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    //escuderias
+
+    .escuderias{
+
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: space-around;
+        align-content: center;
+
+        & .escuderia{
+            width: 237px;
+            height: 200px;
+            border-radius: 0;
+
+            & .escuderia-informacion img{
+                display: none;
+            }
+        }
+    }
+
+    //contacto
+
+    .contenedor{
+        justify-content: center;
+
+        & .contenido-contacto{
+            display: none;
+        }
+
+        & .formula{
+            width: 90%;
+        }
+    }
+}
+
+//tablet 2
+@media only screen and (min-width: 921px) and (max-width: 960px){
+
+    //historias
+
+    .contenido{
+        & .historias{
+            width: auto;
+    
+            & .historia{
+                width: auto;
+    
+                & .listado{
+                    padding-top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        & .barra-navegadora{
+            display: none;
+        }
+    }
+    
+    //pilotos
+
+    .pilotos{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    //escuderias
+
+    .escuderias{
+
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: space-around;
+        align-content: center;
+
+        & .escuderia{
+            width: 237px;
+            height: 200px;
+            border-radius: 0;
+
+            & .escuderia-informacion img{
+                display: none;
+            }
+        }
+    }
+
+    /*contacto*/
+
+    .contenedor{
+        justify-content: center;
+
+        & .contenido-contacto{
+            display: none;
+        }
+
+        & .formula{
+            width: 90%;
+        }
+    }    
+}
+
+
+//desktop 1
+@media only screen and (min-width: 961px)  and (max-width: 992px){
+    
+    //pilotos
+
+    .pilotos{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    //escuderias
+
+    .escuderias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .escuderia{
+            height: 200px;
+        }
+    }
+
+    //contacto
+
+    .contenedor{
+        justify-content: center;
+
+        & .contenido-contacto{
+            display: none;
+        }
+
+        & .formula{
+            width: 90%;
+        }
+    }
+}
+
+//desktop 2
+@media only screen and (min-width: 993px)  and (max-width: 1310px){
+    
+    //escuderias
+
+    .escuderias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .escuderia{
+            height: 200px;
+        }
+    }
+
+    //contacto
+
+    .contenedor{
+        justify-content: center;
+
+        &  .contenido-contacto{
+            display: none;    
+        }
+
+        & .formula{
+            width: 90%;
+        }
+   }
 }

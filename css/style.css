@@ -436,9 +436,6 @@ footer .derechos .redes_sociales a i {
 }
 
 @media only screen and (max-width: 500px) {
-  .navbar-nav a {
-    margin-left: 0;
-  }
   .logo a img {
     width: 95%;
   }
@@ -495,6 +492,158 @@ footer .derechos .redes_sociales a i {
   }
   .escuderias .escuderia .escuderia-informacion img {
     display: none;
+  }
+  .contenedor {
+    justify-content: center;
+  }
+  .contenedor .contenido-contacto {
+    display: none;
+  }
+  .contenedor .formula {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 920px) {
+  .banner {
+    margin-top: 60px;
+  }
+  .articulos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .articulos .articulo {
+    width: 80%;
+  }
+  .articulos .articulo h2 {
+    padding-top: 3px;
+  }
+  .articulos .articulo p {
+    margin-top: 20px;
+  }
+  .contenido .historias {
+    width: auto;
+  }
+  .contenido .historias .historia {
+    width: auto;
+  }
+  .contenido .historias .historia img {
+    display: none;
+  }
+  .contenido .historias .historia .listado {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .contenido .barra-navegadora {
+    display: none;
+  }
+  .pilotos {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-around;
+    align-content: center;
+  }
+  .escuderias {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-around;
+    align-content: center;
+  }
+  .escuderias .escuderia {
+    width: 237px;
+    height: 200px;
+    border-radius: 0;
+  }
+  .escuderias .escuderia .escuderia-informacion img {
+    display: none;
+  }
+  .contenedor {
+    justify-content: center;
+  }
+  .contenedor .contenido-contacto {
+    display: none;
+  }
+  .contenedor .formula {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 921px) and (max-width: 960px) {
+  .contenido .historias {
+    width: auto;
+  }
+  .contenido .historias .historia {
+    width: auto;
+  }
+  .contenido .historias .historia .listado {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .contenido .barra-navegadora {
+    display: none;
+  }
+  .pilotos {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-around;
+    align-content: center;
+  }
+  .escuderias {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-around;
+    align-content: center;
+  }
+  .escuderias .escuderia {
+    width: 237px;
+    height: 200px;
+    border-radius: 0;
+  }
+  .escuderias .escuderia .escuderia-informacion img {
+    display: none;
+  }
+  /*contacto*/
+  .contenedor {
+    justify-content: center;
+  }
+  .contenedor .contenido-contacto {
+    display: none;
+  }
+  .contenedor .formula {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 992px) {
+  .pilotos {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-around;
+    align-content: center;
+  }
+  .escuderias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .escuderias .escuderia {
+    height: 200px;
+  }
+  .contenedor {
+    justify-content: center;
+  }
+  .contenedor .contenido-contacto {
+    display: none;
+  }
+  .contenedor .formula {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1310px) {
+  .escuderias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .escuderias .escuderia {
+    height: 200px;
   }
   .contenedor {
     justify-content: center;
