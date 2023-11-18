@@ -9,7 +9,7 @@ body{
 
 .titulo{
     @include flex-row-center-center;
-    height: 200px;
+    height: 250px;
 
     & h2{
         color: $rojo;
