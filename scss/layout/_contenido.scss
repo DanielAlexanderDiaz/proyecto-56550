@@ -11,7 +11,7 @@ body{
     @include flex-row-center-center;
     height: 250px;
 
-    & h2{
+    & h1{
         color: $rojo;
         text-align: center;
         font-size: 60px;
@@ -21,6 +21,10 @@ body{
 p{
     font-size: 14px;
     font-family: $fuenteSecundaria;
+}
+
+h1{
+    font-family: $fuentePrincipal;
 }
 
 h2{
