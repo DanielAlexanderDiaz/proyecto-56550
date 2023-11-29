@@ -2,7 +2,7 @@ header{
     @include flex-column;   
     @include sizes(100%, 200px);
 
-    & h1{
+    h1{
         font-family: $fuenteSecundaria;
         font-size: 70px;
         text-align: center;
@@ -13,11 +13,11 @@ header{
     @include flex-center;
     height: 150px;
 
-    & a{
+    a{
         @include flex-center-center;
         width: 100%;
 
-        & img{
+        img{
             width: 450px;
         }
     }

@@ -307,14 +307,29 @@ article h2 {
   margin: 0;
 }
 .pilotos .piloto .informacion-piloto .informacion-piloto-personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 50%;
 }
 .pilotos .piloto .informacion-piloto .informacion-piloto-personal p {
   font-family: "Bebas Neue", sans-serif;
   font-size: 15px;
+  margin: 0;
 }
-.pilotos .piloto .informacion-piloto .informacion-piloto-personal img {
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal .informacion-piloto-personal-pais {
+  display: flex;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal .informacion-piloto-personal-pais img {
   width: 20%;
+  margin-left: 10px;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal .informacion-piloto-personal-escuderia {
+  display: flex;
+}
+.pilotos .piloto .informacion-piloto .informacion-piloto-personal .informacion-piloto-personal-escuderia img {
+  width: 20%;
+  margin-left: 10px;
 }
 
 /*escuderias*/
@@ -387,14 +402,18 @@ article h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 25px;
   width: 90%;
+  margin-bottom: 5px;
 }
 .contenedor .formula .formulario input {
   width: 85%;
   height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .contenedor .formula .formulario textarea {
   width: 85%;
   height: 200px;
+  margin-bottom: 10px;
 }
 .contenedor .formula .formulario button {
   width: 100px;
@@ -404,6 +423,7 @@ article h2 {
   background-color: #C10000;
   color: white;
   border: none;
+  margin-top: 20px;
 }
 
 footer {

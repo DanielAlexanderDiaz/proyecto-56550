@@ -11,7 +11,7 @@ body{
     @include flex-row-center-center;
     height: 250px;
 
-    & h1{
+    h1{
         color: $rojo;
         text-align: center;
         font-size: 60px;
@@ -46,7 +46,7 @@ article h2{
     & .banner{
         @include flex-center;
 
-        & img{
+        img{
             width: 100%;
             margin-top: 5px;
             margin-bottom: 20px;
@@ -63,7 +63,7 @@ article h2{
             margin-bottom: 20px;
             background-color: $blanco;
     
-            & h2{
+            h2{
                 width: 100%;
                 text-align: center;
                 margin-top: 0;
@@ -71,11 +71,11 @@ article h2{
                 color: $blanco;
             }
     
-            & img{
+            img{
                 width: 50%;
             }
     
-            & p{
+            p{
                 margin-top: 10px;
                 margin-right: 20px;
                 margin-left: 20px;
@@ -99,7 +99,7 @@ article h2{
             margin-left: 5px;
             border: 1px $rojo solid;
 
-            & h2{
+            h2{
                 writing-mode: vertical-lr;
                 transform: rotate(180deg);
                 margin: 0;
@@ -112,13 +112,13 @@ article h2{
             & .listado{
                 @include flex-column;
 
-                & h3{
+                h3{
                     margin-top: 3px;
                     margin-left: 22px;
                     font-size: 20px;
                 }
 
-                & ul li{
+                ul li{
                     font-family: $fuenteSecundaria;
                     font-size: 15px;
                 }
@@ -135,7 +135,7 @@ article h2{
         border: 1px $rojo solid;
         background-color: #EEEEEE;
 
-        & h3{
+        h3{
             font-size: 25px;
             margin-top: 0;
             text-align: center;
@@ -144,16 +144,16 @@ article h2{
             color: $blanco; 
         }
 
-        & ul{
+        ul{
             padding: 0;
             margin: 0;
             text-align: center;
 
-            & li{
+            li{
                 list-style: none;
                 margin-bottom: 20px;
 
-                & a{
+                a{
                     font-size: 20px;
                     font-family: $fuentePrincipal ;
                     text-decoration: none;
@@ -177,7 +177,7 @@ article h2{
         border: 1px #b6b6b6 solid;
         border-radius: 10px;
 
-        & h3{
+        h3{
             text-align: center;
             font-size: 25px;
             color: black;
@@ -193,7 +193,7 @@ article h2{
                 align-self: center;
                 width: 50%;
 
-                & h2{
+                h2{
                     text-align: center;
                     font-family: $fuentePrincipal;
                     font-size: 90px;
@@ -202,15 +202,33 @@ article h2{
             }
 
             & .informacion-piloto-personal{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 width: 50%;
 
-                & p{
+                p{
                     font-family: $fuentePrincipal;
                     font-size: 15px;
+                    margin: 0;
                 }
 
-                & img{
-                    width: 20%;
+                & .informacion-piloto-personal-pais{
+                    display: flex;
+
+                    img {
+                        width: 20%;
+                        margin-left: 10px;
+                    }
+                }
+
+                & .informacion-piloto-personal-escuderia{
+                    display: flex;
+
+                    img {
+                        width: 20%;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
@@ -227,7 +245,7 @@ article h2{
         border-radius: 0px 30px 30px 0px;
         margin-bottom: 40px;
 
-        & h3{
+        h3{
             writing-mode: vertical-lr;
             transform: rotate(180deg);
             text-align: center;
@@ -238,7 +256,7 @@ article h2{
         & .escuderia-informacion{
             @include flex-column-content-center;
 
-            & img{
+            img{
                 width: 100%;
                 align-self: flex-start;
             }
@@ -260,7 +278,7 @@ article h2{
             text-align: center;
             font-size: 80px;
 
-            & p{
+            p{
                 font-size: 20px;
             }
         }
@@ -282,27 +300,32 @@ article h2{
             border: $rojo 2px solid;
             border-radius: 0px 30px 0px 30px;
 
-            & label{
+            label{
                 font-family: $fuentePrincipal;
                 font-size: 25px;
                 width: 90%;
+                margin-bottom: 5px;
             }
 
-            & input{
+            input{
                 @include sizes(85%, 30px);
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
 
-            & textarea{
+            textarea{
                 @include sizes(85%, 200px);
+                margin-bottom: 10px;
             }
 
-            & button{
+            button{
                 @include sizes(100px, 40px);
                 font-family: $fuentePrincipal;
                 font-size: 20px;
                 background-color: $rojo;
                 color: white;
                 border: none;
+                margin-top: 20px;
             }
         }
         
