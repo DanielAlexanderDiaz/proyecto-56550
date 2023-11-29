@@ -87,6 +87,7 @@ article h2{
 /*historias*/
 .contenido{
     display: flex;
+    overflow: hidden;
 
     & .historias{
         @include flex-column;
@@ -168,6 +169,7 @@ article h2{
 .pilotos{
     @include grid-grid-template-columns-justify-content-align-content;
     background: white;
+    overflow: hidden;
 
     & .piloto{
         @include flex-column-self-center;
@@ -238,6 +240,7 @@ article h2{
 /*escuderias*/
 .escuderias{
     @include grid-grid-template-columns-center;
+    overflow: hidden;
 
     & .escuderia{
         @include sizes(650px, 150px);
@@ -267,6 +270,7 @@ article h2{
 /*contacto*/
 .contenedor{
     display: flex;
+    overflow: hidden;
 
     & .contenido-contacto{
         @include flex-column;

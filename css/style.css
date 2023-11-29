@@ -197,6 +197,7 @@ article h2 {
 /*historias*/
 .contenido {
   display: flex;
+  overflow: hidden;
 }
 .contenido .historias {
   display: flex;
@@ -273,6 +274,7 @@ article h2 {
   justify-content: space-around;
   align-content: center;
   background: white;
+  overflow: hidden;
 }
 .pilotos .piloto {
   display: flex;
@@ -337,6 +339,7 @@ article h2 {
   display: grid;
   grid-template-columns: 2fr 50%;
   justify-items: center;
+  overflow: hidden;
 }
 .escuderias .escuderia {
   width: 650px;
@@ -365,6 +368,7 @@ article h2 {
 /*contacto*/
 .contenedor {
   display: flex;
+  overflow: hidden;
 }
 .contenedor .contenido-contacto {
   display: flex;
