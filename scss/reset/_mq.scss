@@ -99,9 +99,19 @@
 }
 
 //tablet 1
-@media only screen and (min-width: 501px) and (max-width: 920px){
+@media only screen and (min-width: 501px) and (max-width: 918px){
+
+    //header
+
+    .cuerpo-index{
+
+        & .banner{
+            display: none;
+        }
+    }
 
     //index
+
     .articulos{
         @include flex-column-items-center;
 
@@ -121,29 +131,29 @@
     //historias
 
     .contenido{
-        
+
         & .historias{
             width: auto;
-    
+
             & .historia{
                 width: auto;
-    
+
                 img{
                     display: none;
                 }
-    
+
                 & .listado{
                     padding-top: 10px;
                     text-align: center;
                 }
             }
         }
-        
+
         & .barra-navegadora{
             display: none;
         }
     }
-    
+
     //pilotos
 
     .pilotos{
@@ -171,7 +181,7 @@
         justify-content: center;
 
         & .contenido-contacto{
-            display: none;
+            display: none;        
         }
 
         & .formula{
@@ -181,17 +191,27 @@
 }
 
 //tablet 2
-@media only screen and (min-width: 921px) and (max-width: 960px){
+@media only screen and (min-width: 917px) and (max-width: 991px){
+
+    //header
+
+    .cuerpo-index{
+
+        & .banner{
+            display: none;
+        }
+    }
 
     //historias
 
     .contenido{
+
         & .historias{
             width: auto;
-    
+
             & .historia{
                 width: auto;
-    
+
                 & .listado{
                     padding-top: 10px;
                     text-align: center;
@@ -203,7 +223,7 @@
             display: none;
         }
     }
-    
+
     //pilotos
 
     .pilotos{
@@ -240,12 +260,11 @@
     }    
 }
 
-
 //desktop 1
-@media only screen and (min-width: 961px)  and (max-width: 992px){
-    
-    //pilotos
+@media only screen and (min-width: 992px)  and (max-width: 1310px){
 
+    //pilotos
+    
     .pilotos{
         @include grid-grid-template-columns-justify-content-align-content-mq-1;
     }
@@ -273,32 +292,4 @@
             width: 90%;
         }
     }
-}
-
-//desktop 2
-@media only screen and (min-width: 993px)  and (max-width: 1310px){
-    
-    //escuderias
-
-    .escuderias{
-        @include flex-column-items-center;
-
-        & .escuderia{
-            height: 200px;
-        }
-    }
-
-    //contacto
-
-    .contenedor{
-        justify-content: center;
-
-        &  .contenido-contacto{
-            display: none;    
-        }
-
-        & .formula{
-            width: 90%;
-        }
-   }
 }
